@@ -11,7 +11,15 @@ html
             label(for="name") Name
             input(type="text" id="name" name="name")
             label(for="vision") Vision
-            input(type="text" id="vision" name="vision")
+            select(name="vision" id="vision")
+                option(value="anemo") Anemo
+                option(value="geo") Geo
+                option(value="electro") Electro
+                option(value="dendro") Dendro
+                option(value="hydro") Hydro
+                option(value="pyro") Pyro
+                option(value="cryo") Cryo
+
             label(for="location") Location
             input(type="text" id="location" name="location")
             input(type="submit" value="Update Character")
