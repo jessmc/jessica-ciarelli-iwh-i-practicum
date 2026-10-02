@@ -1,0 +1,17 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Update Genshin Impact Character
+        a(href="/") Return to the homepage
+        form(action="/update-cobj" method="POST")
+            label(for="name") Name
+            input(type="text" id="name" name="name")
+            label(for="vision") Vision
+            input(type="text" id="vision" name="vision")
+            label(for="location") Location
+            input(type="text" id="location" name="location")
+            input(type="submit" value="Update Character")
