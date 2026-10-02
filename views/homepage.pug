@@ -6,9 +6,15 @@ html
         link(rel="stylesheet", href="/css/style.css")
     body    
         h1 Genshin Impact Characters
-        .cards 
-            each character in data
-                .card 
-                    h2.card__name #{character.properties.name}
-                    p.card__email #{character.properties.vision}
-                    p.card__email #{character.properties.location}
+        table
+            thead
+                tr
+                    th Name
+                    th Vision
+                    th Location
+            tbody
+                each character in data
+                    tr
+                        td #{character.properties.name}
+                        td #{character.properties.vision}
+                        td #{character.properties.location}

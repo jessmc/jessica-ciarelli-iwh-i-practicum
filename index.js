@@ -10,7 +10,6 @@ app.use(express.json());
 
 // * Please DO NOT INCLUDE the private app access token in your repo. Don't do this practicum in your normal account.
 const PRIVATE_APP_ACCESS = process.env.API_TOKEN;
-console.log("Token check:", PRIVATE_APP_ACCESS ? "Token exists" : "Token is UNDEFINED");
 
 // TODO: ROUTE 1 - Create a new app.get route for the homepage to call your custom object data. Pass this data along to the front-end and create a new pug template in the views folder.
 
@@ -27,7 +26,6 @@ app.get('/', async (req, res) => {
             }
         });
         const data = response.data.results;
-        console.log(data);
         res.render('homepage', { title: 'Homepage | HubSpot APIs', data });
     } catch (error) {
         console.error(error);

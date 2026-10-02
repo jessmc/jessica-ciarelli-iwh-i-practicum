@@ -10,24 +10,22 @@ h1 {
     margin: 1rem;
 }
 
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+table {
+  /* width: 100%; */
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: sans-serif;
 }
 
-.card {
-    flex-basis: 31%;
-    margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-.card__email {
-    font-size: 1rem;
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
 }
 
 .form-wrapper {
